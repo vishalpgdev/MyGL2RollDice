@@ -3,6 +3,7 @@ package com.pavansgroup.vishaltraining.mygl2rolldice
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
-        //Toast.makeText(this@MainActivity, "Button Clicked.", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this@MainActivity, "Button Clicked.", Toast.LENGTH_SHORT).show()
         val randomInt = (1..6).random()
         resultText.text = randomInt.toString()
     }
