@@ -14,7 +14,10 @@ class MainActivity : AppCompatActivity() {
         resultText = findViewById(R.id.resultText)
         val rollButton: Button = findViewById(R.id.btnRoll)
         val countButton: Button = findViewById(R.id.btnCountUP)
+        val resetButton: Button = findViewById(R.id.btnReset)
+        //Button Roll Dice.
         rollButton.setOnClickListener { rollDice() }
+        //Button Count.
         countButton.setOnClickListener {
             val currenText = resultText.text.toString()
             if (currenText == "Hello World!") {
@@ -26,6 +29,10 @@ class MainActivity : AppCompatActivity() {
                 val d = c + 1
                 resultText.text = d.toString()
             }
+        }
+        //Button Reset Event.
+        resetButton.setOnClickListener {
+            resultText.text = 0.toString()
         }
     }
 
