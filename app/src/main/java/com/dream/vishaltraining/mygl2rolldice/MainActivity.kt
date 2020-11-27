@@ -1,4 +1,4 @@
-package com.pavansgroup.vishaltraining.mygl2rolldice
+package com.dream.vishaltraining.mygl2rolldice
 
 import android.os.Bundle
 import android.widget.Button
